@@ -1,0 +1,64 @@
+{
+  "Records": [
+    {
+      "Id": 1,
+      "Name": "Book Inventory",
+      "Category": "Books",
+      "Status": "Active"
+    },
+    {
+      "Id": 2,
+      "Name": "Office Supplies",
+      "Category": "Stationery",
+      "Status": "Active"
+    },
+    {
+      "Id": 3,
+      "Name": "Archived Journals",
+      "Category": "Books",
+      "Status": "Inactive"
+    },
+    {
+      "Id": 4,
+      "Name": "Customer Contacts",
+      "Category": "CRM",
+      "Status": "Active"
+    },
+    {
+      "Id": 5,
+      "Name": "Old Inventory List",
+      "Category": "Stationery",
+      "Status": "Inactive"
+    },
+    {
+      "Id": 6,
+      "Name": "Digital Media",
+      "Category": "Media",
+      "Status": "Active"
+    },
+    {
+      "Id": 7,
+      "Name": "Supplier Records",
+      "Category": "Logistics",
+      "Status": "Active"
+    },
+    {
+      "Id": 8,
+      "Name": "Outdated Catalog",
+      "Category": "Books",
+      "Status": "Inactive"
+    },
+    {
+      "Id": 9,
+      "Name": "Marketing Campaigns",
+      "Category": "Marketing",
+      "Status": "Active"
+    },
+    {
+      "Id": 10,
+      "Name": "Employee Profiles",
+      "Category": "HR",
+      "Status": "Active"
+    }
+  ]
+}
