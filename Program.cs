@@ -5,7 +5,6 @@ using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -19,15 +18,13 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Middleware
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseApiKeyAuth();
 var jsonData = File.ReadAllText("masterdata.json");
 var master = JsonSerializer.Deserialize<MasterData>(jsonData);
 var records = master?.Records ?? new List<Record>();
-// In-memory data
-//var records = new List<Record>();
+
 
 // Create
 app.MapPost("/api/records", (Record record) =>
@@ -37,7 +34,7 @@ app.MapPost("/api/records", (Record record) =>
     return Results.Created($"/api/records/{record.Id}", record);
 });
 
-// Read all / filter
+// Read all 
 app.MapGet("/api/records", (string? category, string? status) =>
 {
     var result = records.AsQueryable();
